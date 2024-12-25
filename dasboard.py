@@ -47,7 +47,7 @@ def create_rfm_df(df):
     
     return rfm_df
 
-all_df = def load_data_chunks_from_github()
+all_df = def load_data_chunks_from_github(https://github.com/apriliasans/final_proyek_data_analisis/blob/main/all_data.csv)
 datetime_columns = ["order_approved_at", "order_delivered_customer_date"]
 all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
