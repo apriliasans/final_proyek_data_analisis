@@ -1,4 +1,6 @@
 import pandas as pd
+import requests
+from io import StringIO
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
@@ -45,8 +47,7 @@ def create_rfm_df(df):
     
     return rfm_df
 
-all_df = pd.read_csv("all_data.csv")
-
+all_df = def load_data_chunks_from_github()
 datetime_columns = ["order_approved_at", "order_delivered_customer_date"]
 all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
