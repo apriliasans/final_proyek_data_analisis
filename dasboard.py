@@ -48,7 +48,7 @@ def create_rfm_df(df):
     return rfm_df
 
 url_raw_github = "https://raw.githubusercontent.com/apriliasans/final_proyek_data_analisis/refs/heads/main/all_data.csv"
-all_df = load_data_from_github("https://raw.githubusercontent.com/apriliasans/final_proyek_data_analisis/refs/heads/main/all_data.csv")
+all_df = load_data_from_github(https://raw.githubusercontent.com/apriliasans/final_proyek_data_analisis/refs/heads/main/all_data.csv)
 datetime_columns = ["order_approved_at", "order_delivered_customer_date"]
 all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
