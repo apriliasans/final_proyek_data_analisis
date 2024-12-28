@@ -156,7 +156,7 @@ col1= st.columns(1)
 avg_frequency = format_currency(rfm_df.monetary.mean(), "AUD", locale='es_CO') 
 st.metric("Average Monetary", value=avg_frequency)
  
-fig, ax = plt.subplots(nrows=3, ncols=1, figsize=(35, 15))
+fig, ax = plt.subplots(nrows=3, ncols=3, figsize=(35, 15))
 colors = ["#90CAF9", "#90CAF9", "#90CAF9", "#90CAF9", "#90CAF9"]
  
 sns.barplot(y="recency", x="customer_id", data=rfm_df.sort_values(by="recency", ascending=False).head(5), palette=colors, ax=ax[0])
